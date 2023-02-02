@@ -13,3 +13,5 @@ Collection of Models and Algorithm to solve marketing and sales problem. Some of
 3. Product Recommendation (Cosine Similarity)
   - User-based collaborative filtering
   - Item-based collaborative filtering
+
+4. Text Analytics
