@@ -83,7 +83,7 @@ def count_words(df, column='tokens', preprocess=None, min_freq=2):
         counter.update(tokens)
     
     counter = Counter()
-    df[column].map(counter.update)
+    df[column].map(update)
     
     df_freq = pd.DataFrame.from_dict(counter, orient='index', columns=['freq'])
     df_freq = df_freq[df_freq['freq'] > min_freq]
