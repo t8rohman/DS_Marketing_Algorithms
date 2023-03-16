@@ -11,11 +11,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import html
 import spacy
+import tqdm
 
 import regex as re  # regular expression
 import textacy
 import textacy.preprocessing as tprep
 from textacy.extract.kwic import keyword_in_context as KWIC  # to make keyword-in-context (KWIC) analysis
+
+nlp = spacy.load('en_core_web_lg')  # setting the language
 
 
 def impurity(text, min_len=10):
@@ -77,8 +80,6 @@ def normalize(text):
     text = tprep.remove.accents(text)
     return text
 
-
-nlp = spacy.load('en_core_web_lg')  # setting the language
 
 def display_prop_spacy(doc, include_punct=False):
     '''
@@ -233,3 +234,35 @@ def extract_nlp_df(doc):
     
     return df_nlp
 
+
+def extract_lemmas(text):
+    '''
+    extract lemmatized version of the text
+    
+    Parameters:
+    text        : text that we want to lemmatize
+    
+    Return:
+    lemmatized version of the text
+    '''
+    
+    doc = nlp(str(text))
+    text = ' '.join([token.lemma_ for token in doc])
+    return text
+
+
+def extract_pos_to_take(text, pos_to_take=['NOUN', 'PROPN', 'ADJ', 'ADV', 'VERB']):
+    '''
+    extract specific part-of-speech (POS) from the text, after being lemmatized first
+    defaul pos are noun, proposition, adjective, adverb, and verb 
+    
+    Parameters:
+    text        : text that we want to take
+    
+    Return:
+    extracted version of the text
+    '''
+    
+    doc = nlp(str(text))
+    text = ' '.join([token.lemma_ for token in doc if token.pos_ in pos_to_take])
+    return text
