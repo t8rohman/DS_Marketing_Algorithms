@@ -22,3 +22,7 @@ Collection of Models and Algorithm to solve marketing and sales problem. Some of
   - Unsupervised topic modelling
   - Text summarization
   - Sentiment analysis
+
+## Data Set
+
+All the data set used for the example of these were obtained from Kaggle data set collection. The files are not listed here but instead, it is listed on each of the project file to make the citation of the data set more clear. The link to download the data set is also provided within the project.
