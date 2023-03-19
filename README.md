@@ -7,7 +7,7 @@ Collection of Models and Algorithm to solve marketing and sales problem. Some of
   - RFE (Recursive Feature Elimination) to know the most important variables
   
 2. Customer Segmentation
-  - K Means segmentation
+  - K-Means segmentation
   - Optimizing number of segments using elbow method etc.
 
 3. Product Recommendation (Cosine Similarity)
@@ -15,3 +15,8 @@ Collection of Models and Algorithm to solve marketing and sales problem. Some of
   - Item-based collaborative filtering
 
 4. Text Analytics
+  - Preprocessing the Text using Spacy
+  - Text classification and explanation
+  - Unsupervised topic modelling
+  - Text summarization
+  - Sentiment analysis
