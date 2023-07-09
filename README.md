@@ -17,11 +17,12 @@ Collection of Models and Algorithm to solve marketing and sales problem. Some of
   - Item-based collaborative filtering
 
 4. **Text Analytics**
-  - Preprocessing the Text using Spacy
+  - Preprocessing the text using spacy
   - Text classification and explanation
   - Unsupervised topic modelling
   - Text summarization
   - Sentiment analysis
+  - Word embeddings for semantic relationship
 
 
 ## Data Set
