@@ -27,10 +27,10 @@ Collection of Models and Algorithm to solve marketing and sales problem. Some of
 ## Updates! New Examples
 
 1. **RFM Analysis** (rfm_analysis)
-   - Recency, Frequency, and Monetary segmentation of customers
-   - Using simple method by dividing data into quintiles
-   - And a more sophisticated algorithm using KMeans
-   - Included with a custom-wrapped Python module for doing the analysis easier
+  - Recency, Frequency, and Monetary segmentation of customers
+  - Using simple method by dividing data into quintiles
+  - And a more sophisticated algorithm using KMeans
+  - Included with a custom-wrapped Python module for doing the analysis easier
 
 ## Data Set
 
